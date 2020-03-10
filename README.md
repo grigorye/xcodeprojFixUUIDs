@@ -11,3 +11,7 @@ https://github.com/CocoaPods/CocoaPods/issues/9359
 ```
 mint run grigorye/xcodeprojFixUUIDs <your.xcodeproj>
 ```
+
+## Thanks To
+
+- Tuist's [XcodeProj](https://github.com/tuist/XcodeProj)
