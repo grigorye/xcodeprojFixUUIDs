@@ -12,4 +12,4 @@ let projectPath = Path(CommandLine.arguments[1])
 let xcodeproj = try XcodeProj(path: projectPath)
 xcodeproj.pbxproj.invalidateUUIDs()
 xcodeproj.pbxproj.rootObject = xcodeproj.pbxproj.rootObject // https://github.com/tuist/XcodeProj/issues/528
-try xcodeproj.write(path: projectPath)
+try xcodeproj.write(path: projectPath, override: true, outputSettings: PBXOutputSettings(projFileListOrder: .byUUID, projNavigatorFileOrder: .unsorted, projBuildPhaseFileOrder: .byFilename, projReferenceFormat: .xcode))
